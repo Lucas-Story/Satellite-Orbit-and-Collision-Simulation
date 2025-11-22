@@ -1,0 +1,2106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<FreeFlyerProjectFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" timePrecisionMode="nanosecond" schemaVersion="7.9.0.5">
+  <ProjectInformation>
+    <Author />
+    <Source />
+    <FreeFlyerVersion>7.9.1.11316767</FreeFlyerVersion>
+    <RevisionNumber />
+    <Title />
+    <Subject />
+    <Category />
+    <Keywords />
+    <Comments />
+    <Notes />
+  </ProjectInformation>
+  <ProjectPreferences>
+    <General>
+      <LockProjectFromEditing>false</LockProjectFromEditing>
+    </General>
+    <OnOpen>
+      <ShowControlSequence>true</ShowControlSequence>
+      <ShowEmptyEnvironment>false</ShowEmptyEnvironment>
+      <ShowNotes>false</ShowNotes>
+      <ShowHome>false</ShowHome>
+      <ShowOutput>false</ShowOutput>
+      <CreateBackup>false</CreateBackup>
+      <BackupLocation></BackupLocation>
+    </OnOpen>
+    <OnRun>
+      <SaveMissionPlan>false</SaveMissionPlan>
+      <HideWarningMessages>false</HideWarningMessages>
+    </OnRun>
+  </ProjectPreferences>
+  <ProjectDataFiles>
+    <EarthOrientationFile useDefault="true"></EarthOrientationFile>
+    <ElectronDensityCoefficientFile useDefault="true"></ElectronDensityCoefficientFile>
+    <GeopotentialFile useDefault="true"></GeopotentialFile>
+    <HarrisPriesterDragFile useDefault="true"></HarrisPriesterDragFile>
+    <JacchiaAtmosphereModelFile useDefault="true"></JacchiaAtmosphereModelFile>
+    <MagneticFieldFile useDefault="true"></MagneticFieldFile>
+    <PlanetaryFile useDefault="true"></PlanetaryFile>
+    <StationGeodeticsFile useDefault="true"></StationGeodeticsFile>
+    <SolidTideFile useDefault="true"></SolidTideFile>
+    <DSTFile useDefault="true"></DSTFile>
+    <StarFieldFile useDefault="true"></StarFieldFile>
+  </ProjectDataFiles>
+  <ProjectObjects>
+    <Object>
+      <SolarSystem name="FF_SolarSystem" isConstant="false" isGlobal="true">
+        <Name>FF_SolarSystem</Name>
+        <EarthOrientationModel>1</EarthOrientationModel>
+        <CIRFEvaluationMode>1</CIRFEvaluationMode>
+        <ComputePolarMotion>true</ComputePolarMotion>
+        <ModelCelestialPoleOffsets>true</ModelCelestialPoleOffsets>
+        <ApplyUT1Correction>true</ApplyUT1Correction>
+        <COUpdateInterval units="s" displayed_units="s">0</COUpdateInterval>
+        <IonosphereOptions>
+          <IonosphereOptions name="FF_SolarSystem_|ionoOptions|" isConstant="false" isGlobal="true">
+            <Name>FF_SolarSystem_|ionoOptions|</Name>
+            <MaximumHeight units="km" displayed_units="km">1000</MaximumHeight>
+            <MinimumHeight units="km" displayed_units="km">80</MinimumHeight>
+            <IntegrationStepSize units="km" displayed_units="km">25</IntegrationStepSize>
+            <ScaleFactor units="" displayed_units="">1</ScaleFactor>
+            <Model>0</Model>
+            <metadata dim="0" />
+          </IonosphereOptions>
+        </IonosphereOptions>
+        <NoradKeplerEqTolerance units="" displayed_units="">1e-12</NoradKeplerEqTolerance>
+        <metadata dim="0" />
+      </SolarSystem>
+    </Object>
+    <Object>
+      <ConsoleWindow name="Console" isConstant="false" isGlobal="true">
+        <Name>Console</Name>
+        <WindowTitle>Console</WindowTitle>
+        <WordWrap>false</WordWrap>
+        <CurrentTextColor>0</CurrentTextColor>
+        <BackColor>16777215</BackColor>
+        <Dimension units="" displayed_units="">10</Dimension>
+        <DockMode>1</DockMode>
+        <CurrentFontType>0</CurrentFontType>
+        <UseStdOut>true</UseStdOut>
+        <ShowOnRun>true</ShowOnRun>
+        <metadata dim="0" />
+      </ConsoleWindow>
+    </Object>
+    <Object>
+      <Formation name="Satellites" isConstant="false" isGlobal="false">
+        <Name>Satellites</Name>
+        <Count units="" displayed_units="">0</Count>
+        <Element dim="0" />
+        <Visualization>
+          <ViewAsGroup>true</ViewAsGroup>
+          <GroupPointSize units="pixel" displayed_units="pixel">2</GroupPointSize>
+        </Visualization>
+        <InitializationSource>3</InitializationSource>
+        <InitializationFile>C:\Users\lucas\Free Flyer\Fundamentals_GPS.tle</InitializationFile>
+        <NavigationConstellationType>None</NavigationConstellationType>
+        <metadata dim="0" />
+      </Formation>
+    </Object>
+    <Object>
+      <Ephemeris name="Ephemeris1" isConstant="false" isGlobal="false">
+        <Name>Ephemeris1</Name>
+        <CentralBody>Earth</CentralBody>
+        <StepSize units="s" displayed_units="s">0</StepSize>
+        <WritePositionVelocityCovariance>false</WritePositionVelocityCovariance>
+        <Type>Ephemeris</Type>
+        <InterpolationMethod>1</InterpolationMethod>
+        <AutoDowngradeInterpolation>true</AutoDowngradeInterpolation>
+        <EphemSpacecraft />
+        <CCSDSOEMProperties>
+          <CCSDSOEMProperties name="Ephemeris1_|CCSDSOEMProperties|" isConstant="false" isGlobal="false">
+            <Name>Ephemeris1_|CCSDSOEMProperties|</Name>
+            <ValidationOptions>
+              <CCSDSOEMValidationOptions name="Ephemeris1_|CCSDSOEMProperties|_|CCSDSOEMValidationOptions|" isConstant="false" isGlobal="false">
+                <Name>Ephemeris1_|CCSDSOEMProperties|_|CCSDSOEMValidationOptions|</Name>
+                <EnforceMetadataStartStopTimeDataSpanConsistency>true</EnforceMetadataStartStopTimeDataSpanConsistency>
+                <metadata dim="0" />
+              </CCSDSOEMValidationOptions>
+            </ValidationOptions>
+            <HeaderComments dim="(0)" />
+            <Originator>NONE</Originator>
+            <MetadataComments dim="(0)" />
+            <ObjectName></ObjectName>
+            <ObjectID></ObjectID>
+            <CenterName></CenterName>
+            <ReferenceFrame>ICRF</ReferenceFrame>
+            <ReferenceFrameEpoch>Undefined</ReferenceFrameEpoch>
+            <TimeSystem>TAI</TimeSystem>
+            <WriteUsableStartStopTimes>false</WriteUsableStartStopTimes>
+            <WriteInterpolationInformation>true</WriteInterpolationInformation>
+            <UsableStartTime>Undefined</UsableStartTime>
+            <UsableStopTime>Undefined</UsableStopTime>
+            <InterpolationMethod></InterpolationMethod>
+            <InterpolationDegree units="" displayed_units="">0</InterpolationDegree>
+            <EphemerisDataComments dim="(0)" />
+            <CovarianceReferenceFrame>MATCH STATE FRAME</CovarianceReferenceFrame>
+            <metadata dim="0" />
+          </CCSDSOEMProperties>
+        </CCSDSOEMProperties>
+        <FFEphemProperties>
+          <FFEphemProperties name="Ephemeris1_|FFEphemProperties|" isConstant="false" isGlobal="false">
+            <Name>Ephemeris1_|FFEphemProperties|</Name>
+            <FormatVersion>1</FormatVersion>
+            <ColumnDelimiter>,</ColumnDelimiter>
+            <DiscontinuityDelimiter>|</DiscontinuityDelimiter>
+            <UseColumnPadding>true</UseColumnPadding>
+            <ColumnLabels dim="7">
+              <value>Epoch</value>
+              <value>X</value>
+              <value>Y</value>
+              <value>Z</value>
+              <value>VX</value>
+              <value>VY</value>
+              <value>VZ</value>
+            </ColumnLabels>
+            <ColumnUnitLabels dim="7">
+              <value>UTC Calendar</value>
+              <value>km</value>
+              <value>km</value>
+              <value>km</value>
+              <value>km/s</value>
+              <value>km/s</value>
+              <value>km/s</value>
+            </ColumnUnitLabels>
+            <ColumnInterpolators dim="7">
+              <value>3</value>
+              <value>1</value>
+              <value>1</value>
+              <value>1</value>
+              <value>1</value>
+              <value>1</value>
+              <value>1</value>
+            </ColumnInterpolators>
+            <ColumnSpacecraftProperties dim="7">
+              <value>Epoch</value>
+              <value>X</value>
+              <value>Y</value>
+              <value>Z</value>
+              <value>VX</value>
+              <value>VY</value>
+              <value>VZ</value>
+            </ColumnSpacecraftProperties>
+            <WriteColumnAsMappedProperty dim="7">
+              <value>true</value>
+              <value>true</value>
+              <value>true</value>
+              <value>true</value>
+              <value>true</value>
+              <value>true</value>
+              <value>true</value>
+            </WriteColumnAsMappedProperty>
+            <DiscontinuityStepBehavior>1</DiscontinuityStepBehavior>
+            <SpacecraftName></SpacecraftName>
+            <WriteBackwardsCompatibleReferenceFrameLabel>false</WriteBackwardsCompatibleReferenceFrameLabel>
+            <metadata dim="0" />
+          </FFEphemProperties>
+        </FFEphemProperties>
+        <SPKProperties>
+          <SPKProperties name="Ephemeris1_|SPKProperties|" isConstant="false" isGlobal="false">
+            <Name>Ephemeris1_|SPKProperties|</Name>
+            <SPKType>13</SPKType>
+            <ObserverName>EARTH</ObserverName>
+            <ObserverNAIFID units="" displayed_units="">399</ObserverNAIFID>
+            <TargetName>EARTH</TargetName>
+            <TargetNAIFID units="" displayed_units="">399</TargetNAIFID>
+            <MetadataComments></MetadataComments>
+            <PolynomialDegree units="" displayed_units="">7</PolynomialDegree>
+            <metadata dim="0" />
+          </SPKProperties>
+        </SPKProperties>
+        <PropagationDirection>0</PropagationDirection>
+        <metadata dim="0" />
+      </Ephemeris>
+    </Object>
+    <Object>
+      <FiniteBurn name="FiniteBurn1" isConstant="false" isGlobal="false">
+        <Name>FiniteBurn1</Name>
+        <LinearTangentSteering>
+          <LinearTangentSteering name="FiniteBurn1_|LinearTangentSteering|" isConstant="false" isGlobal="false">
+            <Name>FiniteBurn1_|LinearTangentSteering|</Name>
+            <LambdaRef units="" displayed_units="" dim="(3)">
+              <value>1</value>
+              <value>0</value>
+              <value>0</value>
+            </LambdaRef>
+            <LambdaDot units="1/s" displayed_units="1/s" dim="(3)">
+              <value>0</value>
+              <value>0</value>
+              <value>0</value>
+            </LambdaDot>
+            <metadata dim="0" />
+          </LinearTangentSteering>
+        </LinearTangentSteering>
+        <ThrustSteeringMethod>None</ThrustSteeringMethod>
+        <AttitudeSystem>2</AttitudeSystem>
+        <BurnDirection units="" displayed_units="" dim="3">
+          <value>1</value>
+          <value>0</value>
+          <value>0</value>
+        </BurnDirection>
+        <ManeuverOffsetTime units="s" displayed_units="s">0.0</ManeuverOffsetTime>
+        <BurnDuration units="s" displayed_units="s">30.0</BurnDuration>
+        <ThrustScaleFactor units="" displayed_units="">1.0</ThrustScaleFactor>
+        <ThrustOffsetDeltaX units="" displayed_units="">0.0</ThrustOffsetDeltaX>
+        <ThrustOffsetDeltaY units="" displayed_units="">0.0</ThrustOffsetDeltaY>
+        <OD>
+          <FiniteBurnODProperties name="FiniteBurn1_|FiniteBurnODProperties|" isConstant="false" isGlobal="false">
+            <Name>FiniteBurn1_|FiniteBurnODProperties|</Name>
+            <ThrustOffsetDeltaX>
+              <EstimableCoefficient name="FiniteBurn1_|OD_ThrustOffsetDeltaX|" isConstant="false" isGlobal="false">
+                <Name>FiniteBurn1_|OD_ThrustOffsetDeltaX|</Name>
+                <ProcessAction>1</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <ProcessNoiseRate units="1/s" displayed_units="1/s">1e-10</ProcessNoiseRate>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </ThrustOffsetDeltaX>
+            <ThrustOffsetDeltaY>
+              <EstimableCoefficient name="FiniteBurn1_|OD_ThrustOffsetDeltaY|" isConstant="false" isGlobal="false">
+                <Name>FiniteBurn1_|OD_ThrustOffsetDeltaY|</Name>
+                <ProcessAction>1</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <ProcessNoiseRate units="1/s" displayed_units="1/s">1e-10</ProcessNoiseRate>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </ThrustOffsetDeltaY>
+            <ThrustScaleFactor>
+              <EstimableCoefficient name="FiniteBurn1_|OD_ThrustScaleFactor|" isConstant="false" isGlobal="false">
+                <Name>FiniteBurn1_|OD_ThrustScaleFactor|</Name>
+                <ProcessAction>1</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <ProcessNoiseRate units="1/s" displayed_units="1/s">1e-10</ProcessNoiseRate>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </ThrustScaleFactor>
+            <metadata dim="0" />
+          </FiniteBurnODProperties>
+        </OD>
+        <metadata dim="0" />
+      </FiniteBurn>
+    </Object>
+    <Object>
+      <Variable name="numSatellites" isConstant="false" isGlobal="false">
+        <Name>numSatellites</Name>
+        <Value units="" displayed_units="">0.0</Value>
+        <metadata dim="0" />
+      </Variable>
+    </Object>
+    <Object>
+      <TimeSpan name="TimeSpan1" isConstant="false" isGlobal="false">
+        <Name>TimeSpan1</Name>
+        <Value units="day" displayed_units="day">2.000000000000000000000000000000000000</Value>
+        <metadata dim="0" />
+      </TimeSpan>
+    </Object>
+    <Object>
+      <Variable name="i" isConstant="false" isGlobal="false">
+        <Name>i</Name>
+        <Value units="" displayed_units="">0.0</Value>
+        <metadata dim="0" />
+      </Variable>
+    </Object>
+    <Object>
+      <Variable name="k" isConstant="false" isGlobal="false">
+        <Name>k</Name>
+        <Value units="" displayed_units="">0.0</Value>
+        <metadata dim="0" />
+      </Variable>
+    </Object>
+    <Object>
+      <ViewWindow name="ViewWindow1" isConstant="false" isGlobal="false">
+        <Name>ViewWindow1</Name>
+        <WindowTitle></WindowTitle>
+        <Viewpoints dim="1">
+          <value>
+            <Viewpoint name="ViewWindow1_Default" isConstant="false" isGlobal="false">
+              <Name>ViewWindow1_Default</Name>
+              <ViewpointName>Default</ViewpointName>
+              <ViewpointType>view</ViewpointType>
+              <ViewpointParameters>
+                <view>
+                  <ThreeDView>
+                    <ThreeDViewpointOptions name="ViewWindow1_Default_|ThreeDView|" isConstant="false" isGlobal="false">
+                      <Name>ViewWindow1_Default_|ThreeDView|</Name>
+                      <Source>Earth</Source>
+                      <Target>Earth</Target>
+                      <TailReference>Earth</TailReference>
+                      <ReferenceFrame>inertial</ReferenceFrame>
+                      <Declination units="deg" displayed_units="deg">20.0</Declination>
+                      <FieldOfView units="deg" displayed_units="deg">45.0</FieldOfView>
+                      <Radius units="km" displayed_units="km">30000.0</Radius>
+                      <RightAscension units="deg" displayed_units="deg">270.0</RightAscension>
+                      <metadata dim="0" />
+                    </ThreeDViewpointOptions>
+                  </ThreeDView>
+                </view>
+              </ViewpointParameters>
+              <metadata dim="0" />
+            </Viewpoint>
+          </value>
+        </Viewpoints>
+        <UseLighting>true</UseLighting>
+        <UseTextures>true</UseTextures>
+        <ShowLogo>true</ShowLogo>
+        <LogoTextureFilename></LogoTextureFilename>
+        <ShowStatusText>true</ShowStatusText>
+        <ShowTextBackdrops>true</ShowTextBackdrops>
+        <AmbientColor>6710886</AmbientColor>
+        <StatusTextColor>16777215</StatusTextColor>
+        <BackgroundColor>0</BackgroundColor>
+        <ObjectShadowing>0</ObjectShadowing>
+        <StatusTextFont>
+          <ViewFont name="ViewWindow1_|StatusTextFont|" isConstant="false" isGlobal="false">
+            <Name>ViewWindow1_|StatusTextFont|</Name>
+            <Bold>false</Bold>
+            <Italic>false</Italic>
+            <Size units="" displayed_units="">0.0</Size>
+            <Strikeout>false</Strikeout>
+            <Typeface>Tahoma</Typeface>
+            <Underline>false</Underline>
+            <metadata dim="0" />
+          </ViewFont>
+        </StatusTextFont>
+        <DefaultObjectLabelFont>
+          <ViewFont name="ViewWindow1_|DefaultObjectLabelFont|" isConstant="false" isGlobal="false">
+            <Name>ViewWindow1_|DefaultObjectLabelFont|</Name>
+            <Bold>false</Bold>
+            <Italic>false</Italic>
+            <Size units="" displayed_units="">20.0</Size>
+            <Strikeout>false</Strikeout>
+            <Typeface>Tahoma</Typeface>
+            <Underline>false</Underline>
+            <metadata dim="0" />
+          </ViewFont>
+        </DefaultObjectLabelFont>
+        <Objects dim="13">
+          <value>Mercury</value>
+          <value>Venus</value>
+          <value>Earth</value>
+          <value>Moon</value>
+          <value>Mars</value>
+          <value>Jupiter</value>
+          <value>Saturn</value>
+          <value>Uranus</value>
+          <value>Neptune</value>
+          <value>Pluto</value>
+          <value>Sun</value>
+          <value>Stars</value>
+          <value>Satellites</value>
+        </Objects>
+        <ProjectionHeights units="km" displayed_units="km" dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>800</value>
+        </ProjectionHeights>
+        <ShowObject dim="13">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </ShowObject>
+        <ShowBody dim="13">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </ShowBody>
+        <ShowName dim="13">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowName>
+        <ShowGrid dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowGrid>
+        <ShowAxes dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowAxes>
+        <ShowHistory dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowHistory>
+        <ShowIcon dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowIcon>
+        <IconImageFilename dim="13">
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+        </IconImageFilename>
+        <IconSize units="pixel" displayed_units="pixel" dim="13">
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30</value>
+        </IconSize>
+        <IconDrawingMode dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </IconDrawingMode>
+        <IconColor dim="13">
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+        </IconColor>
+        <StoreVelocity dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </StoreVelocity>
+        <AxesScaleMode dim="13">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </AxesScaleMode>
+        <AxesSize units="km" displayed_units="km" dim="13">
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1</value>
+        </AxesSize>
+        <AxesScale units="" displayed_units="" dim="13">
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+        </AxesScale>
+        <TailLength units="" displayed_units="" dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </TailLength>
+        <HistoryMode units="" displayed_units="" dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </HistoryMode>
+        <CurrentTailState units="" displayed_units="" dim="13">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </CurrentTailState>
+        <LineWidthUnits units="" displayed_units="" dim="13">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </LineWidthUnits>
+        <LineWidths units="" displayed_units="" dim="13">
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1</value>
+        </LineWidths>
+        <LabelFonts dim="13">
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+        </LabelFonts>
+        <MouseInteractionEnabled>true</MouseInteractionEnabled>
+        <metadata dim="0" />
+      </ViewWindow>
+    </Object>
+    <Object>
+      <Spacecraft name="mySatellite1" isConstant="false" isGlobal="false">
+        <Name>mySatellite1</Name>
+        <EpochDetails>
+          <EpochSystem>UTC</EpochSystem>
+          <EpochTimeZone>UTC +/- 00:00</EpochTimeZone>
+          <EpochFormat>Calendar</EpochFormat>
+          <EpochType>Absolute</EpochType>
+          <EpochTypeInfo />
+        </EpochDetails>
+        <Epoch>Jan 01 2020 00:00:00.000000000</Epoch>
+        <ReferenceFrame>International Celestial Reference Frame</ReferenceFrame>
+        <CentralBody>Earth</CentralBody>
+        <ElementType>Cartesian</ElementType>
+        <OrbitState>
+          <Cartesian>
+            <X units="km" displayed_units="km">-3410.673</X>
+            <Y units="km" displayed_units="km">5950.957</Y>
+            <Z units="km" displayed_units="km">-1788.627</Z>
+            <VX units="km/s" displayed_units="km/s">1.893006</VX>
+            <VY units="km/s" displayed_units="km/s">-1.071993</VY>
+            <VZ units="km/s" displayed_units="km/s">-7.176346</VZ>
+          </Cartesian>
+        </OrbitState>
+        <Orientation>
+          <AttitudeCoordinateSystem />
+          <AttitudeRefFrame>LVLH</AttitudeRefFrame>
+          <AttitudeSystem>EulerAngles</AttitudeSystem>
+          <AttitudeState>
+            <EulerAngles>
+              <EulerAngles units="deg" displayed_units="deg" dim="3">
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+              </EulerAngles>
+              <EulerRates units="deg/s" displayed_units="deg/s" dim="3">
+                <value>0</value>
+                <value>0</value>
+                <value>0</value>
+              </EulerRates>
+              <EulerSequence units="" displayed_units="" dim="3">
+                <value>3</value>
+                <value>1</value>
+                <value>2</value>
+              </EulerSequence>
+            </EulerAngles>
+          </AttitudeState>
+        </Orientation>
+        <PhysicalProperties>
+          <ForceCoefficientType>0</ForceCoefficientType>
+          <ForceCoefficientTypes>
+            <Standard>
+              <Cd units="" displayed_units="">2.2</Cd>
+              <Cr units="" displayed_units="">1.2</Cr>
+            </Standard>
+          </ForceCoefficientTypes>
+          <Cl units="" displayed_units="">0</Cl>
+          <DragArea units="m^2" displayed_units="m^2">0.01</DragArea>
+          <LiftArea units="m^2" displayed_units="m^2">0</LiftArea>
+          <SRPArea units="m^2" displayed_units="m^2">0.01</SRPArea>
+          <SatelliteId>1</SatelliteId>
+        </PhysicalProperties>
+        <Visualization>
+          <Color>255</Color>
+          <BodyScale units="" displayed_units="">100000</BodyScale>
+          <TailLength units="" displayed_units="">100</TailLength>
+          <HistoryMode>0</HistoryMode>
+          <TickType>None</TickType>
+          <Annotation></Annotation>
+          <ModelDefinitionType>0</ModelDefinitionType>
+          <ModelDefinition>
+            <ThreeDModelFilename>
+              <ThreeDModelFile>Internal::globalstar</ThreeDModelFile>
+            </ThreeDModelFilename>
+          </ModelDefinition>
+        </Visualization>
+        <LaunchCoordinates>
+          <LCSEpochDetails>
+            <LCSEpochSystem>UTC</LCSEpochSystem>
+            <LCSEpochTimeZone>UTC +/- 00:00</LCSEpochTimeZone>
+            <LCSEpochFormat>Calendar</LCSEpochFormat>
+            <LCSEpochType>Absolute</LCSEpochType>
+            <LCSEpochTypeInfo />
+          </LCSEpochDetails>
+          <LCSEpoch>Jan 01 2020 00:00:00.000000000</LCSEpoch>
+          <LCSLongitude units="deg" displayed_units="deg">0.0</LCSLongitude>
+          <LCSLatitude units="deg" displayed_units="deg">0.0</LCSLatitude>
+        </LaunchCoordinates>
+        <InertialData>
+          <VehicleDryMass units="kg" displayed_units="kg">4.9</VehicleDryMass>
+          <VehicleDryMOI units="kg m^2" displayed_units="kg m^2" dim="3,3">
+            <value>0.0513</value>
+            <value>0</value>
+            <value>0</value>
+            <value>0</value>
+            <value>0.0513</value>
+            <value>0</value>
+            <value>0</value>
+            <value>0</value>
+            <value>0.0082</value>
+          </VehicleDryMOI>
+          <MassTotal units="kg" displayed_units="kg">1990.18</MassTotal>
+          <VehicleDryCenterOfGravity units="m" displayed_units="m" dim="3">
+            <value>0.1</value>
+            <value>0.1</value>
+            <value>0.3</value>
+          </VehicleDryCenterOfGravity>
+        </InertialData>
+        <OrbitNumberCumulative units="" displayed_units="">1</OrbitNumberCumulative>
+        <OrbitNumberBounded units="" displayed_units="">1</OrbitNumberBounded>
+        <OrbitNumberResetNumber units="" displayed_units="">0</OrbitNumberResetNumber>
+        <OrbitNumberDaily units="" displayed_units="">1</OrbitNumberDaily>
+        <OrbitNumberResetLongitude units="" displayed_units="">20</OrbitNumberResetLongitude>
+        <StateAdvancerType>PropFM</StateAdvancerType>
+        <StateAdvancer>
+          <PropFM>
+            <Prop>
+              <RK89 name="mySatellite1_Propagator" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_Propagator</Name>
+                <StepSize units="s" displayed_units="s">30</StepSize>
+                <StepJustTaken units="s" displayed_units="s">300.0</StepJustTaken>
+                <StepToTake units="s" displayed_units="s">300.0</StepToTake>
+                <LargeCurvature units="" displayed_units="">0</LargeCurvature>
+                <FixedStep>1</FixedStep>
+                <Tolerance units="" displayed_units="">1e-9</Tolerance>
+                <AllowErrorViolation>false</AllowErrorViolation>
+                <CalculateSTM>false</CalculateSTM>
+                <STMCalculationMethod>2</STMCalculationMethod>
+                <FM>
+                  <ForceModel name="mySatellite1_ForceModel" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_ForceModel</Name>
+                    <GravitatingBodies>
+                      <CelestialObjects dim="11">
+                        <value>Mercury</value>
+                        <value>Venus</value>
+                        <value>Earth</value>
+                        <value>Mars</value>
+                        <value>Jupiter</value>
+                        <value>Saturn</value>
+                        <value>Uranus</value>
+                        <value>Neptune</value>
+                        <value>Pluto</value>
+                        <value>Moon</value>
+                        <value>Sun</value>
+                      </CelestialObjects>
+                      <UseBodyForce dim="11">
+                        <value>false</value>
+                        <value>false</value>
+                        <value>true</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>true</value>
+                        <value>true</value>
+                      </UseBodyForce>
+                      <PlanetFieldType units="" displayed_units="" dim="11">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>2</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </PlanetFieldType>
+                      <PlanetFieldDegree units="" displayed_units="" dim="11">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>4</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </PlanetFieldDegree>
+                      <PlanetFieldOrder units="" displayed_units="" dim="11">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>4</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </PlanetFieldOrder>
+                      <PlanetoPotentialFilename dim="11">
+                        <value></value>
+                        <value></value>
+                        <value>DEFAULT</value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                      </PlanetoPotentialFilename>
+                      <SolidTideFilename dim="11">
+                        <value></value>
+                        <value></value>
+                        <value>DEFAULT</value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                        <value></value>
+                      </SolidTideFilename>
+                      <UseZeroTideModel dim="11">
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                        <value>false</value>
+                      </UseZeroTideModel>
+                      <SolidTideDegree units="" displayed_units="" dim="11">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>2</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </SolidTideDegree>
+                      <SolidTideOrder units="" displayed_units="" dim="11">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>2</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </SolidTideOrder>
+                    </GravitatingBodies>
+                    <SRP>true</SRP>
+                    <SRPForceGeometry>0</SRPForceGeometry>
+                    <Atmospheric>
+                      <Drag>true</Drag>
+                      <AtmosphericDensityModel>1</AtmosphericDensityModel>
+                      <SolarFluxFileType>0</SolarFluxFileType>
+                      <SolarFluxFilename>DEFAULT</SolarFluxFilename>
+                      <HarrisPriesterF107Index>65</HarrisPriesterF107Index>
+                      <Lift>false</Lift>
+                      <Rho1 units="" displayed_units="">0.0</Rho1>
+                      <HarrisPriesterDensityFilename>DEFAULT</HarrisPriesterDensityFilename>
+                    </Atmospheric>
+                    <OtherAccelerations>
+                      <UseOtherAcceleration>false</UseOtherAcceleration>
+                      <OtherAccelerations units="km/s^2" displayed_units="km/s^2" dim="(3)">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </OtherAccelerations>
+                      <OtherAccelerationsRate units="km/s^3" displayed_units="km/s^3" dim="(3)">
+                        <value>0</value>
+                        <value>0</value>
+                        <value>0</value>
+                      </OtherAccelerationsRate>
+                    </OtherAccelerations>
+                    <metadata dim="0" />
+                  </ForceModel>
+                </FM>
+                <ToleranceMode>1</ToleranceMode>
+                <RelativeErrorThreshold units="" displayed_units="">0.1</RelativeErrorThreshold>
+                <metadata dim="0" />
+              </RK89>
+            </Prop>
+          </PropFM>
+        </StateAdvancer>
+        <AHFParms>
+          <AHF xsi:nil="true" />
+          <AHFFilename></AHFFilename>
+        </AHFParms>
+        <Hardware>
+          <Sensors dim="0" />
+          <Tanks dim="1">
+            <value>
+              <ElectricalTank name="mySatellite1_Tank1" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_Tank1</Name>
+                <TankMass units="kg" displayed_units="kg">0.05</TankMass>
+                <MOI units="kg m^2" displayed_units="kg m^2" dim="3,3">
+                  <value>0.15393389262365</value>
+                  <value>0</value>
+                  <value>0</value>
+                  <value>0</value>
+                  <value>0.15393389262365</value>
+                  <value>0</value>
+                  <value>0</value>
+                  <value>0</value>
+                  <value>0.15393389262365</value>
+                </MOI>
+                <TankPower units="kW" displayed_units="kW">0.01</TankPower>
+                <TankMassDensity units="kg/m^3" displayed_units="kg/m^3">1.2</TankMassDensity>
+                <TankReference units="m" displayed_units="m" dim="3">
+                  <value>0.1</value>
+                  <value>0.1</value>
+                  <value>0.3</value>
+                </TankReference>
+                <TankOrientation units="" displayed_units="" dim="(3)">
+                  <value>0</value>
+                  <value>0</value>
+                  <value>1</value>
+                </TankOrientation>
+                <TankCenterOfGravity units="m" displayed_units="m" dim="(3)">
+                  <value>0</value>
+                  <value>0</value>
+                  <value>1</value>
+                </TankCenterOfGravity>
+                <metadata dim="0" />
+              </ElectricalTank>
+            </value>
+          </Tanks>
+          <Thrusters dim="1">
+            <value>
+              <Thruster name="mySatellite1_Thruster1" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_Thruster1</Name>
+                <ThrusterC1 units="N" displayed_units="N">0.000001</ThrusterC1>
+                <ThrusterC2 units="N/kPa" displayed_units="N/kPa">0.0</ThrusterC2>
+                <ThrusterC3 units="N" displayed_units="N">0.0</ThrusterC3>
+                <ThrusterC4 units="N/kPa" displayed_units="N/kPa">0.0</ThrusterC4>
+                <ThrusterC5 units="N/kPa^2" displayed_units="N/kPa^2">0.0</ThrusterC5>
+                <ThrusterC6 units="N/kPa^C7" displayed_units="N/kPa^C7">0.0</ThrusterC6>
+                <ThrusterC7 units="" displayed_units="">0.0</ThrusterC7>
+                <ThrusterC8 units="N/kPa^C9" displayed_units="N/kPa^C9">0.0</ThrusterC8>
+                <ThrusterC9 units="" displayed_units="">0.0</ThrusterC9>
+                <ThrusterC10 units="N/kPa^C11" displayed_units="N/kPa^C11">0.0</ThrusterC10>
+                <ThrusterC11 units="" displayed_units="">0.0</ThrusterC11>
+                <ThrusterC12 units="N" displayed_units="N">0.0</ThrusterC12>
+                <ThrusterC13 units="" displayed_units="">0.0</ThrusterC13>
+                <ThrusterC14 units="1/kPa" displayed_units="1/kPa">0.0</ThrusterC14>
+                <ThrusterC15 units="" displayed_units="">0.0</ThrusterC15>
+                <ThrusterC16 units="1/kPa" displayed_units="1/kPa">0.0</ThrusterC16>
+                <ThrusterK1 units="s" displayed_units="s">1000</ThrusterK1>
+                <ThrusterK2 units="s/kPa" displayed_units="s/kPa">0.0</ThrusterK2>
+                <ThrusterK3 units="s" displayed_units="s">0.0</ThrusterK3>
+                <ThrusterK4 units="s/kPa" displayed_units="s/kPa">0.0</ThrusterK4>
+                <ThrusterK5 units="s/kPa^2" displayed_units="s/kPa^2">0.0</ThrusterK5>
+                <ThrusterK6 units="s/kPa^K7" displayed_units="s/kPa^K7">0.0</ThrusterK6>
+                <ThrusterK7 units="" displayed_units="">0.0</ThrusterK7>
+                <ThrusterK8 units="s/kPa^K9" displayed_units="s/kPa^K9">0.0</ThrusterK8>
+                <ThrusterK9 units="" displayed_units="">0.0</ThrusterK9>
+                <ThrusterK10 units="s/kPa^K11" displayed_units="s/kPa^K11">0.0</ThrusterK10>
+                <ThrusterK11 units="" displayed_units="">0.0</ThrusterK11>
+                <ThrusterK12 units="s" displayed_units="s">0.0</ThrusterK12>
+                <ThrusterK13 units="" displayed_units="">0.0</ThrusterK13>
+                <ThrusterK14 units="1/kPa" displayed_units="1/kPa">0.0</ThrusterK14>
+                <ThrusterK15 units="" displayed_units="">0.0</ThrusterK15>
+                <ThrusterK16 units="1/kPa" displayed_units="1/kPa">0.0</ThrusterK16>
+                <ThrusterPC1 units="kPa" displayed_units="kPa">0.0</ThrusterPC1>
+                <ThrusterPC2 units="" displayed_units="">1.0</ThrusterPC2>
+                <ThrusterPC3 units="" displayed_units="">0.0</ThrusterPC3>
+                <ThrusterPC4 units="" displayed_units="">0.0</ThrusterPC4>
+                <ThrusterPC5 units="" displayed_units="">0.0</ThrusterPC5>
+                <ThrusterPC6 units="" displayed_units="">0.0</ThrusterPC6>
+                <ThrusterGravityConst units="m/s^2" displayed_units="m/s^2">9.81</ThrusterGravityConst>
+                <ThrusterOn>true</ThrusterOn>
+                <ScaleFactor units="" displayed_units="">1.0</ScaleFactor>
+                <DutyCycle units="" displayed_units="">1.0</DutyCycle>
+                <TestTankConsistency>true</TestTankConsistency>
+                <MaxPressureDiff units="kPa" displayed_units="kPa">0.01</MaxPressureDiff>
+                <MaxTempDiff units="Deg C" displayed_units="Deg C">0.01</MaxTempDiff>
+                <ForceTankConsistency>1</ForceTankConsistency>
+                <IspScaleFactor units="" displayed_units="">1.0</IspScaleFactor>
+                <Type>Electrical</Type>
+                <Valves dim="1">
+                  <value>
+                    <Valve name="mySatellite1_Thruster1_Valve1" isConstant="false" isGlobal="false">
+                      <Name>mySatellite1_Thruster1_Valve1</Name>
+                      <State>true</State>
+                      <Tanks dim="1">
+                        <value>mySatellite1_Tank1</value>
+                      </Tanks>
+                      <metadata dim="0" />
+                    </Valve>
+                  </value>
+                </Valves>
+                <Orientation units="m" displayed_units="m" dim="3">
+                  <value>0</value>
+                  <value>0</value>
+                  <value>1</value>
+                </Orientation>
+                <Position units="m" displayed_units="m" dim="(3)">
+                  <value>0</value>
+                  <value>0</value>
+                  <value>1</value>
+                </Position>
+                <metadata dim="0" />
+              </Thruster>
+            </value>
+          </Thrusters>
+          <ProximityZones dim="0" />
+          <Receivers dim="0" />
+          <GNSSReceivers dim="0" />
+          <Transponders dim="0" />
+        </Hardware>
+        <PlateModel>
+          <PlateModel name="mySatellite1_|PlateModel|" isConstant="false" isGlobal="false">
+            <Name>mySatellite1_|PlateModel|</Name>
+            <Plates dim="0" />
+            <DrawMethod>2</DrawMethod>
+            <DrawNormals>false</DrawNormals>
+            <DrawRotationAxes>false</DrawRotationAxes>
+            <Visible>true</Visible>
+            <VisualScale units="" displayed_units="">100000</VisualScale>
+            <metadata dim="0" />
+          </PlateModel>
+        </PlateModel>
+        <OD>
+          <SpacecraftODProperties name="mySatellite1_|SpacecraftODProperties|" isConstant="false" isGlobal="false">
+            <Name>mySatellite1_|SpacecraftODProperties|</Name>
+            <ElementSetToProcess>Cartesian</ElementSetToProcess>
+            <Cartesian>
+              <CartesianOrbitStateEstimablePropertyContainer name="mySatellite1_|SpacecraftODProperties|_|Cartesian|" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_|SpacecraftODProperties|_|Cartesian|</Name>
+                <X>
+                  <EstimablePosition name="mySatellite1_|SpacecraftODProperties|_|Cartesian|_|X|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|Cartesian|_|X|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km" displayed_units="km">0.05</Sigma>
+                    <ProcessNoise units="km^2" displayed_units="km^2">1e-14</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePosition>
+                </X>
+                <Y>
+                  <EstimablePosition name="mySatellite1_|SpacecraftODProperties|_|Cartesian|_|Y|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|Cartesian|_|Y|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km" displayed_units="km">0.05</Sigma>
+                    <ProcessNoise units="km^2" displayed_units="km^2">1e-14</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePosition>
+                </Y>
+                <Z>
+                  <EstimablePosition name="mySatellite1_|SpacecraftODProperties|_|Cartesian|_|Z|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|Cartesian|_|Z|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km" displayed_units="km">0.05</Sigma>
+                    <ProcessNoise units="km^2" displayed_units="km^2">1e-14</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimablePosition>
+                </Z>
+                <VX>
+                  <EstimableVelocity name="mySatellite1_|SpacecraftODProperties|_|Cartesian|_|VX|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|Cartesian|_|VX|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km/s" displayed_units="km/s">2e-5</Sigma>
+                    <ProcessNoise units="km^2/s^2" displayed_units="km^2/s^2">1e-17</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableVelocity>
+                </VX>
+                <VY>
+                  <EstimableVelocity name="mySatellite1_|SpacecraftODProperties|_|Cartesian|_|VY|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|Cartesian|_|VY|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km/s" displayed_units="km/s">2e-5</Sigma>
+                    <ProcessNoise units="km^2/s^2" displayed_units="km^2/s^2">1e-17</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableVelocity>
+                </VY>
+                <VZ>
+                  <EstimableVelocity name="mySatellite1_|SpacecraftODProperties|_|Cartesian|_|VZ|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|Cartesian|_|VZ|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km/s" displayed_units="km/s">2e-5</Sigma>
+                    <ProcessNoise units="km^2/s^2" displayed_units="km^2/s^2">1e-17</ProcessNoise>
+                    <metadata dim="0" />
+                  </EstimableVelocity>
+                </VZ>
+                <metadata dim="0" />
+              </CartesianOrbitStateEstimablePropertyContainer>
+            </Cartesian>
+            <Equinoctial>
+              <EquinoctialOrbitStateEstimablePropertyContainer name="mySatellite1_|SpacecraftODProperties|_|Equinoctial|" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_|SpacecraftODProperties|_|Equinoctial|</Name>
+                <A>
+                  <EstimableEquinoctialA name="mySatellite1_|SpacecraftODProperties|_|Equinoctial|_|A|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|Equinoctial|_|A|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="km" displayed_units="km">0.05</Sigma>
+                    <ProcessNoise units="km^2" displayed_units="km^2">1e-14</ProcessNoise>
+                    <ProcessNoiseRate units="km^2/s" displayed_units="km^2/s">1e-15</ProcessNoiseRate>
+                    <metadata dim="0" />
+                  </EstimableEquinoctialA>
+                </A>
+                <H>
+                  <EstimablePositionComponent name="mySatellite1_|SpacecraftODProperties|_|Equinoctial|_|H|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|Equinoctial|_|H|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <ProcessNoiseRate units="1/s" displayed_units="1/s">1e-20</ProcessNoiseRate>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </H>
+                <K>
+                  <EstimablePositionComponent name="mySatellite1_|SpacecraftODProperties|_|Equinoctial|_|K|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|Equinoctial|_|K|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <ProcessNoiseRate units="1/s" displayed_units="1/s">1e-20</ProcessNoiseRate>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </K>
+                <P>
+                  <EstimablePositionComponent name="mySatellite1_|SpacecraftODProperties|_|Equinoctial|_|P|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|Equinoctial|_|P|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <ProcessNoiseRate units="1/s" displayed_units="1/s">1e-20</ProcessNoiseRate>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </P>
+                <Q>
+                  <EstimablePositionComponent name="mySatellite1_|SpacecraftODProperties|_|Equinoctial|_|Q|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|Equinoctial|_|Q|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <ProcessNoiseRate units="1/s" displayed_units="1/s">1e-20</ProcessNoiseRate>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </Q>
+                <Longitude>
+                  <EstimableEquinoctialLongitude name="mySatellite1_|SpacecraftODProperties|_|Equinoctial|_|Longitude|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|Equinoctial|_|Longitude|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="deg" displayed_units="deg">1e-3</Sigma>
+                    <ProcessNoise units="deg^2" displayed_units="deg^2">1e-15</ProcessNoise>
+                    <ProcessNoiseRate units="deg^2/s" displayed_units="deg^2/s">1e-16</ProcessNoiseRate>
+                    <metadata dim="0" />
+                  </EstimableEquinoctialLongitude>
+                </Longitude>
+                <metadata dim="0" />
+              </EquinoctialOrbitStateEstimablePropertyContainer>
+            </Equinoctial>
+            <SGP4>
+              <Sgp4OrbitStateEstimablePropertyContainer name="mySatellite1_|SpacecraftODProperties|_|SGP4|" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_|SpacecraftODProperties|_|SGP4|</Name>
+                <H>
+                  <EstimablePositionComponent name="mySatellite1_|SpacecraftODProperties|_|SGP4|_|H|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|SGP4|_|H|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <ProcessNoiseRate units="1/s" displayed_units="1/s">1e-20</ProcessNoiseRate>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </H>
+                <K>
+                  <EstimablePositionComponent name="mySatellite1_|SpacecraftODProperties|_|SGP4|_|K|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|SGP4|_|K|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <ProcessNoiseRate units="1/s" displayed_units="1/s">1e-20</ProcessNoiseRate>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </K>
+                <P>
+                  <EstimablePositionComponent name="mySatellite1_|SpacecraftODProperties|_|SGP4|_|P|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|SGP4|_|P|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <ProcessNoiseRate units="1/s" displayed_units="1/s">1e-20</ProcessNoiseRate>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </P>
+                <Q>
+                  <EstimablePositionComponent name="mySatellite1_|SpacecraftODProperties|_|SGP4|_|Q|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|SGP4|_|Q|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="" displayed_units="">1e-5</Sigma>
+                    <ProcessNoise units="" displayed_units="">1e-19</ProcessNoise>
+                    <ProcessNoiseRate units="1/s" displayed_units="1/s">1e-20</ProcessNoiseRate>
+                    <metadata dim="0" />
+                  </EstimablePositionComponent>
+                </Q>
+                <Longitude>
+                  <EstimableEquinoctialLongitude name="mySatellite1_|SpacecraftODProperties|_|SGP4|_|Longitude|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|SGP4|_|Longitude|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="deg" displayed_units="deg">1e-3</Sigma>
+                    <ProcessNoise units="deg^2" displayed_units="deg^2">1e-15</ProcessNoise>
+                    <ProcessNoiseRate units="deg^2/s" displayed_units="deg^2/s">1e-16</ProcessNoiseRate>
+                    <metadata dim="0" />
+                  </EstimableEquinoctialLongitude>
+                </Longitude>
+                <MeanMotion>
+                  <EstimableMeanMotion name="mySatellite1_|SpacecraftODProperties|_|SGP4|_|MeanMotion|" isConstant="false" isGlobal="false">
+                    <Name>mySatellite1_|SpacecraftODProperties|_|SGP4|_|MeanMotion|</Name>
+                    <ProcessAction>1</ProcessAction>
+                    <Sigma units="orbits/day" displayed_units="orbits/day">1e-6</Sigma>
+                    <ProcessNoise units="(orbits/day)^2" displayed_units="(orbits/day)^2">1e-16</ProcessNoise>
+                    <ProcessNoiseRate units="(orbits/day)^2/s" displayed_units="(orbits/day)^2/s">1e-17</ProcessNoiseRate>
+                    <metadata dim="0" />
+                  </EstimableMeanMotion>
+                </MeanMotion>
+                <metadata dim="0" />
+              </Sgp4OrbitStateEstimablePropertyContainer>
+            </SGP4>
+            <Cd>
+              <EstimableCoefficient name="mySatellite1_|OD_Cd|" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_|OD_Cd|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <ProcessNoiseRate units="1/s" displayed_units="1/s">1e-10</ProcessNoiseRate>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </Cd>
+            <Rho1>
+              <EstimableCoefficient name="mySatellite1_|OD_Rho1|" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_|OD_Rho1|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <ProcessNoiseRate units="1/s" displayed_units="1/s">1e-10</ProcessNoiseRate>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </Rho1>
+            <BStar>
+              <EstimableBStar name="mySatellite1_|OD_BStar|" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_|OD_BStar|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="er^-1" displayed_units="er^-1">1e-5</Sigma>
+                <ProcessNoise units="er^-2" displayed_units="er^-2">1e-12</ProcessNoise>
+                <ProcessNoiseRate units="er^-2/s" displayed_units="er^-2/s">1e-13</ProcessNoiseRate>
+                <metadata dim="0" />
+              </EstimableBStar>
+            </BStar>
+            <AGOM>
+              <EstimableAGOM name="mySatellite1_|OD_AGOM|" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_|OD_AGOM|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="m^2/kg" displayed_units="m^2/kg">1e-5</Sigma>
+                <ProcessNoise units="m^4/kg^2" displayed_units="m^4/kg^2">1e-12</ProcessNoise>
+                <ProcessNoiseRate units="m^4/(kg^2 s)" displayed_units="m^4/(kg^2 s)">1e-13</ProcessNoiseRate>
+                <metadata dim="0" />
+              </EstimableAGOM>
+            </AGOM>
+            <DragEstimateOption>0</DragEstimateOption>
+            <Cr>
+              <EstimableCoefficient name="mySatellite1_|OD_Cr|" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_|OD_Cr|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <ProcessNoiseRate units="1/s" displayed_units="1/s">1e-10</ProcessNoiseRate>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </Cr>
+            <OtherAccelerationsX>
+              <EstimableAcceleration name="mySatellite1_|OD_UX|" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_|OD_UX|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="km/s^2" displayed_units="km/s^2">1e-6</Sigma>
+                <ProcessNoise units="km^2/s^4" displayed_units="km^2/s^4">1e-15</ProcessNoise>
+                <ProcessNoiseRate units="km^2/s^5" displayed_units="km^2/s^5">1e-16</ProcessNoiseRate>
+                <metadata dim="0" />
+              </EstimableAcceleration>
+            </OtherAccelerationsX>
+            <OtherAccelerationsY>
+              <EstimableAcceleration name="mySatellite1_|OD_UY|" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_|OD_UY|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="km/s^2" displayed_units="km/s^2">1e-6</Sigma>
+                <ProcessNoise units="km^2/s^4" displayed_units="km^2/s^4">1e-15</ProcessNoise>
+                <ProcessNoiseRate units="km^2/s^5" displayed_units="km^2/s^5">1e-16</ProcessNoiseRate>
+                <metadata dim="0" />
+              </EstimableAcceleration>
+            </OtherAccelerationsY>
+            <OtherAccelerationsZ>
+              <EstimableAcceleration name="mySatellite1_|OD_UZ|" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_|OD_UZ|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="km/s^2" displayed_units="km/s^2">1e-6</Sigma>
+                <ProcessNoise units="km^2/s^4" displayed_units="km^2/s^4">1e-15</ProcessNoise>
+                <ProcessNoiseRate units="km^2/s^5" displayed_units="km^2/s^5">1e-16</ProcessNoiseRate>
+                <metadata dim="0" />
+              </EstimableAcceleration>
+            </OtherAccelerationsZ>
+            <PropagateCovariance>false</PropagateCovariance>
+            <CovariancePropagationModel>0</CovariancePropagationModel>
+            <Covariance>
+              <SpacecraftCovariance name="mySatellite1_|Covariance|" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_|Covariance|</Name>
+                <Matrix units="" displayed_units="" dim="0,0" />
+                <metadata dim="0" />
+              </SpacecraftCovariance>
+            </Covariance>
+            <CustomObservations dim="0" />
+            <ProcessNoise>
+              <SpacecraftProcessNoise name="mySatellite1_|ProcessNoise|" isConstant="false" isGlobal="false">
+                <Name>mySatellite1_|ProcessNoise|</Name>
+                <ReferenceFrame>ICRF</ReferenceFrame>
+                <Matrix units="" displayed_units="" dim="0,0" />
+                <ReferenceFrameSupportData>
+                  <ICRF />
+                </ReferenceFrameSupportData>
+                <metadata dim="0" />
+              </SpacecraftProcessNoise>
+            </ProcessNoise>
+            <ProcessNoiseModel>0</ProcessNoiseModel>
+            <metadata dim="0" />
+          </SpacecraftODProperties>
+        </OD>
+        <RefFrameEpochDetails>
+          <RefFrameEpochSystem>UTC</RefFrameEpochSystem>
+          <RefFrameEpochTimeZone>UTC +/- 00:00</RefFrameEpochTimeZone>
+          <RefFrameEpochFormat>Calendar</RefFrameEpochFormat>
+          <RefFrameEpochType>Absolute</RefFrameEpochType>
+          <RefFrameEpochTypeInfo />
+        </RefFrameEpochDetails>
+        <RefFrameEpoch>Jan 01 2020 00:00:00.000000000</RefFrameEpoch>
+        <OrbitNumberCalculationsEnabled>false</OrbitNumberCalculationsEnabled>
+        <metadata dim="0" />
+      </Spacecraft>
+    </Object>
+    <Object>
+      <Variable name="thrustDuration" isConstant="false" isGlobal="false">
+        <Name>thrustDuration</Name>
+        <Value units="" displayed_units="">0.0</Value>
+        <metadata dim="0" />
+      </Variable>
+    </Object>
+    <Object>
+      <Variable name="errorCount" isConstant="false" isGlobal="false">
+        <Name>errorCount</Name>
+        <Value units="" displayed_units="">0.0</Value>
+        <metadata dim="0" />
+      </Variable>
+    </Object>
+    <Object>
+      <Variable name="significantProb" isConstant="false" isGlobal="false">
+        <Name>significantProb</Name>
+        <Value units="" displayed_units="">0.0</Value>
+        <metadata dim="0" />
+      </Variable>
+    </Object>
+    <Object>
+      <Variable name="simDuration" isConstant="false" isGlobal="false">
+        <Name>simDuration</Name>
+        <Value units="" displayed_units="">0.0</Value>
+        <metadata dim="0" />
+      </Variable>
+    </Object>
+  </ProjectObjects>
+  <ProjectMissionSequence>
+    <ProjectExternals />
+    <ProjectCommands>
+      <FreeForm enabled="false">
+        <Label>Done Via API (comment out)</Label>
+        <Bookmarks />
+        <Breakpoints />
+        <FreeFormScript><![CDATA[//comment out the following when not testing
+
+//loads TLEs for testing
+mySatellite1.LoadTLE("my_sat.tle", 0);
+numSatellites = Satellites.LoadTLE("other_sats.tle");
+
+//sets thrust duration
+thrustDuration = 0.01;
+simDuration = 0.1;
+]]></FreeFormScript>
+      </FreeForm>
+      <FreeForm enabled="true">
+        <Label>Create Objects and Variables</Label>
+        <Bookmarks />
+        <Breakpoints />
+        <FreeFormScript><![CDATA[
+TimeSpan startEpoch = mySatellite1.Epoch;
+TimeSpan timeClosestApproach;
+
+TimeSpanArray timesClosestApproach;
+
+Variable hardBodyRadius = 50; //m
+Variable rangeAtTCA; //km
+Variable currentRangeS1S2; //km
+Variable currentRangeRate; 
+Variable prevRangeRate;
+Variable probabilityCollision;
+Variable color = ColorTools.Aqua;
+Variable numberPOCs = 0;
+
+Array satelliteApproached;
+Array currentRangeRates(numSatellites);
+Array prevRangeRates(numSatellites);
+Array satsWithErrors;
+StringArray sigProbData;
+]]></FreeFormScript>
+      </FreeForm>
+      <FreeForm enabled="true">
+        <Label>Set Up Spacecraft</Label>
+        <Bookmarks />
+        <Breakpoints />
+        <FreeFormScript><![CDATA[
+// set propogator type to SGP4 (to be used for all TLE based Spacecraft that aren't maneuvering)
+For i=0 to (numSatellites-1) step 1;
+	Satellites[i].SetPropagatorType("SGP4");
+End;
+
+// set propogator type to RK89 for maneuvering mySatellite
+mySatellite1.SetPropagatorType("RK89");
+// sets drag coefficient (was changed when TLE was loaded in)
+mySatellite1.Cd = 2.2;
+
+// add a tail to the Satellites
+ViewWindow1.SetHistoryMode(Satellites.ObjectId, 1);
+
+// set size scaling factor (for visualization)
+For i = 0 to (numSatellites-1) step 1;
+	Satellites[i].BodyScale = 1;
+End;
+
+// reports
+Report "Initial State Vector:" to Console;
+Report "Epoch: ", mySatellite1.Epoch.ConvertToCalendarDate() to Console;
+Report "X: ", mySatellite1.X, " Y: ", mySatellite1.Y, " Z: ", mySatellite1.Z, " VX: ", mySatellite1.VX, " VY: ", mySatellite1.VY, " VZ: ", mySatellite1.VZ, " VMag: ", mySatellite1.VMag, " Mass:", mySatellite1.Mass to Console;
+Report " " to Console;
+Report "Simulating for", simDuration, " days with thruster on for the first", thrustDuration, " days" to Console;
+Report "Mass:", mySatellite1.Mass, " kg" to Console;
+Report "Thrust:", (mySatellite1.Thrusters[0] AsType Thruster).ThrusterC1, " N" to Console;
+Report " Cd:", mySatellite1.Cd, " Cl:", mySatellite1.Cl, " Cr:", mySatellite1.Cr, " Drag Area:", mySatellite1.DragArea, " Lift Area:", mySatellite1.LiftArea, " SRP Area:", mySatellite1.SRPArea to Console;
+Report "CG:", mySatellite1.CenterOfMass[0], " ", mySatellite1.CenterOfMass[1], " ", mySatellite1.CenterOfMass[2] to Console;
+Report "MOI:", mySatellite1.MOI to Console;
+Report " " to Console;
+]]></FreeFormScript>
+      </FreeForm>
+      <FreeForm enabled="true">
+        <Label>Propogate mySatellite Maneuver</Label>
+        <Bookmarks />
+        <Breakpoints />
+        <FreeFormScript><![CDATA[Put mySatellite1 to Ephemeris1;
+While (mySatellite1.ElapsedTime < TimeSpan.FromDays(thrustDuration));
+	Maneuver mySatellite1 using FiniteBurn1;
+	Put mySatellite1 to Ephemeris1;
+End;
+
+
+If (simDuration > thrustDuration);
+	While (mySatellite1.ElapsedTime < TimeSpan.FromDays(simDuration-thrustDuration));
+		Step mySatellite1;
+		Put mySatellite1 to Ephemeris1;
+	End;
+End;
+
+Report "Thrust simulation completed." to Console;
+Report " " to Console;
+Report "Final State Vector:" to Console;
+Report "Epoch: ", mySatellite1.Epoch.ConvertToCalendarDate() to Console;
+Report "X: ", mySatellite1.X, " Y: ", mySatellite1.Y, " Z: ", mySatellite1.Z, " VX: ", mySatellite1.VX, " VY: ", mySatellite1.VY, " VZ: ", mySatellite1.VZ, " VMag: ", mySatellite1.VMag, " Mass:", mySatellite1.Mass to Console;
+]]></FreeFormScript>
+      </FreeForm>
+      <FreeForm enabled="true">
+        <Label>Re-Setup for POC</Label>
+        <Bookmarks />
+        <Breakpoints />
+        <FreeFormScript><![CDATA[Spacecraft mySatellite2(Ephemeris1);
+Step mySatellite2 to (mySatellite2.Epoch == startEpoch);
+
+// add Spacecraft2 to visualizaitons
+ViewWindow1.AddObject(mySatellite2);
+
+// add a tail and change color for Spacecraft2
+ViewWindow1.SetHistoryMode(mySatellite2.ObjectId, 1);
+ViewWindow1.SetObjectColor(mySatellite2.ObjectId,color);
+
+// filter out mySatellite from the Satellites formation 
+// (in theory the TLE that created the Satellites formation should contain mySpacecraft's TLE info)
+For i = (numSatellites-1) to 0 step -1;
+	If (Satellites[i].DisplayName == mySatellite1.DisplayName);
+		Satellites.RemoveAt(i);
+		numSatellites = Satellites.Count;
+	End;
+End;
+
+
+Report " " to Console;
+Report " " to Console;
+Report " " to Console;
+Report "Number of Satellites: ", (numSatellites+1)<5,5> to Console;]]></FreeFormScript>
+      </FreeForm>
+      <FreeForm enabled="true">
+        <Label>Propogate Spacecrafts for POC</Label>
+        <Bookmarks />
+        <Breakpoints />
+        <FreeFormScript><![CDATA[
+//step all Spacecraft to same starting epoch (reference is starting epoch of Spacecraft2)
+For i = 0 to (numSatellites-1) step 1;
+	// Try block ensures that program doesn't crash if a satellite has a propogation error
+	Try sending ErrorCount to errorCount;
+		satsWithErrors.PushBack(i);
+		Step Satellites[i] to (Satellites[i].Epoch == mySatellite2.Epoch);
+		satsWithErrors.PopBack();
+	End;
+End;
+
+// reports number of satellites that had a propogation error
+// common propogation errors are: negative eccentricity, spacecraft crashes into the earth, 
+If (errorCount > 0.0);
+	Report "There was an issue with stepping ", errorCount<5,5>, " satellites to the start epoch. This is normal as long as it is a small number (about 1%) of satellites, and is likely due to them developing a negative eccentricity during propogation." to Console;
+	errorCount = 0.0;
+	// removes the satellites with propogation errors
+	For i = (satsWithErrors.Dimension-1) to 0 step -1;
+		Satellites.RemoveAt(satsWithErrors[i]);
+	End;
+	Report "Removed ", satsWithErrors.Dimension<5,5>, " satellites from the simulation." to Console;
+	numSatellites = Satellites.Count;
+	Report "New number of satellites being simulated: ", (numSatellites+1)<5,5> to Console;
+End;
+
+// set prevRangeRates to the range rate at start time to prevent potentially skipping the first time of closest approach (TCA)
+For i = 0 to (numSatellites-1) step 1;
+	prevRangeRates[i] = mySatellite2.RangeRate(Satellites[i]);
+End;
+
+// reset satsWithErrors to be reused to catch errors below
+satsWithErrors.Clear();
+satsWithErrors.Dimension = numSatellites;
+
+Update ViewWindow1;
+// propogate for thrust duration and track every TCA between a Satellite and Spacecraft2
+While (mySatellite2.ElapsedTime < TimeSpan.FromDays(simDuration));
+	
+	//step Spacecraft2 (to be used as a reference epoch for stepping the Satellites)
+	Step mySatellite2;
+	
+	errorCount = 0.0;
+	// step all other satellites in formation
+	For i = 0 to (numSatellites-1) step 1;
+		// Try block ensures program doesn't crash if a satellite crashes into the earth
+		Try sending ErrorCount to errorCount;
+			satsWithErrors[i] = 1;
+			Step Satellites[i] to (Satellites[i].Epoch == mySatellite2.Epoch);
+			satsWithErrors[i] = 0;
+		End;
+	End;
+	
+	// for each satellite in the formation, check for range rate sign change to determine if a TCA has occured, and if so store the time and range
+	For i = 0 to (numSatellites-1) step 1;
+		// doesn't run for sats that threw a propagation error
+		If (satsWithErrors[i] == 0);
+			//update current RangeRate
+			currentRangeRates[i] = mySatellite2.RangeRate(Satellites[i]);
+		
+			//if rangeRate flips signs to being positive, that means spacecrafts are now going apart, so epoch is near a TCA
+			If ((currentRangeRates[i] > 0) and (prevRangeRates[i] < 0 ));
+				timesClosestApproach.PushBack(mySatellite2.Epoch);
+				satelliteApproached.PushBack(i);
+			End;
+	
+			//update previous RangeRate
+			prevRangeRates[i] = currentRangeRates[i];
+		End;
+	End;
+	
+	Update ViewWindow1;
+End;
+
+// reports number of satellites that had a propogation error
+If (errorCount > 0.0);
+	Report "There was an issue with stepping ", errorCount<5,5>, " satellites to the end epoch. This is normal as long as it is a very small number ( < 1%) of satellites, and is likely due to them developing a negative eccentricity during propogation." to Console;
+	errorCount = 0.0;
+End;
+
+// turn off tails so visualization doesn't get weird when jumping to different epochs
+ViewWindow1.SetHistoryMode(mySatellite2.ObjectId, 0);
+ViewWindow1.SetHistoryMode(Satellites.ObjectId, 0);
+mySatellite2.TailLength = 0;
+For i = 0 to (numSatellites-1) step 1;
+	Satellites[i].TailLength = 0;
+End;
+
+// calculate probability of collision at each TCA
+For i = 0 to (timesClosestApproach.Dimension-1) step 1;
+	// try block ensure any errors don't crash the program
+	Try sending ErrorCount to errorCount;
+		// Step spacecrafts to approx TCA
+		Step mySatellite2 to (mySatellite2.Epoch == timesClosestApproach[i]);
+		Step Satellites[satelliteApproached[i]] to (Satellites[satelliteApproached[i]].Epoch == timesClosestApproach[i]);
+	
+		// Compute the exact TCA (function finds a relative minimum, so is only really accurate when the spacecraft are already at the approximate TCA
+		timeClosestApproach = mySatellite2.TCA(Satellites[satelliteApproached[i]], rangeAtTCA);
+		
+		// Step spacecrafts to exact TCA
+		Step mySatellite2 to (mySatellite2.Epoch == timeClosestApproach);
+		Step Satellites[satelliteApproached[i]] to (Satellites[satelliteApproached[i]].Epoch == timeClosestApproach);
+
+		// Calculate the Pc at TCA
+		probabilityCollision  = mySatellite2.ProbabilityOfCollision(Satellites[satelliteApproached[i]], hardBodyRadius);
+
+		// only display if there is a non-zero probability of collision
+		If (probabilityCollision>=0.0000000000000000000000000000000000000000000000000000001);
+			numberPOCs++;
+			Report " " to Console;
+			Report " " to Console;
+			Report " " to Console;
+			Report "Satellite" to Console;
+			Report Satellites[satelliteApproached[i]].DisplayName to Console;
+			Report "TCA" to Console;
+			Report timeClosestApproach.ConvertToCalendarDate to Console;
+			Report "Distance at TCA" to Console;
+			Report rangeAtTCA to Console;
+			Report "Probability of collision" to Console;
+			Report probabilityCollision<14,55> to Console;
+			Update ViewWindow1;
+		End;
+		
+		If (probabilityCollision > 0.01);
+			significantProb++;
+			sigProbData.PushBack(Satellites[satelliteApproached[i]].DisplayName);
+			sigProbData.PushBack(timeClosestApproach.ConvertToCalendarDate);
+			sigProbData.PushBack(rangeAtTCA.ToString());
+			sigProbData.PushBack(probabilityCollision.ToString());
+		End;
+	End;
+End;
+
+Report " " to Console;
+Report " " to Console;
+Report " " to Console;
+			
+// report any errors with the TCAs
+If (errorCount > 0.0);
+	Report errorCount<5,5>, " out of ", timesClosestApproach.Dimension<5,5>, " TCAs threw errors. This is normal/expected as long as it is a low ratio. See note at bottom of FreeForm block 6 for more information." to Console;
+End;
+
+// report number of non-zero POCs found
+Report "Checked ", timesClosestApproach.Dimension<5,5>, " Times of Closest Approach for Probability of Collision." to Console;
+Report "Non-Zero Probabilities of Collision Found: ", numberPOCs to Console;
+Report "Significant Probabilites of Collision Found: ", significantProb to Console;
+Report "Reprinting information for all significant probabilities of collision:" to Console;
+
+// reprint the information for the significant POCs
+If (significantProb>0.0);
+	For i = 0 to (significantProb*4-1) step 4;
+		Report " " to Console;
+		Report " " to Console;
+		Report " " to Console;
+		Report "Satellite" to Console;
+		Report sigProbData[i] to Console;
+		Report "TCA" to Console;
+		Report sigProbData[i+1] to Console;
+		Report "Distance at TCA" to Console;
+		Report sigProbData[i+2] to Console;
+		Report "Probability of collision" to Console;
+		Report sigProbData[i+3] to Console;
+	End;
+End;
+Report " " to Console;
+Report " " to Console;
+Report " " to Console;
+
+Report "Finished" to Console;
+
+// Note: the reason that line 88 throws an error sometimes is almost certainly due to the presence of satellites with highly eliptical orbits, but it isn't a concern as functionality is not affected
+// ran a debugging test, this shows that all the satellites that are throwing this error are eliptical orbiters that are currently far away from earth (around apogee)
+// this is probably because the range rate is flipping in a way that suggests a TCA, but since the orbit is eliptical this isn't really a close approach, it is a passby
+// so the TCA method tries to find the TCA which is when the satellite returns back to around its perigee, but this takes so much time that it ends up being out of the 
+// time range for Spacecraft2 so throws an error]]></FreeFormScript>
+      </FreeForm>
+    </ProjectCommands>
+  </ProjectMissionSequence>
+  <ProjectScript><![CDATA[// //comment out the following when not testing
+// 
+// //loads TLEs for testing
+// mySatellite1.LoadTLE("my_sat.tle", 0);
+// numSatellites = Satellites.LoadTLE("other_sats.tle");
+// 
+// //sets thrust duration
+// thrustDuration = 0.01;
+// simDuration = 0.1;
+// 
+
+TimeSpan startEpoch = mySatellite1.Epoch;
+TimeSpan timeClosestApproach;
+
+TimeSpanArray timesClosestApproach;
+
+Variable hardBodyRadius = 50; //m
+Variable rangeAtTCA; //km
+Variable currentRangeS1S2; //km
+Variable currentRangeRate; 
+Variable prevRangeRate;
+Variable probabilityCollision;
+Variable color = ColorTools.Aqua;
+Variable numberPOCs = 0;
+
+Array satelliteApproached;
+Array currentRangeRates(numSatellites);
+Array prevRangeRates(numSatellites);
+Array satsWithErrors;
+StringArray sigProbData;
+
+
+// set propogator type to SGP4 (to be used for all TLE based Spacecraft that aren't maneuvering)
+For i=0 to (numSatellites-1) step 1;
+	Satellites[i].SetPropagatorType("SGP4");
+End;
+
+// set propogator type to RK89 for maneuvering mySatellite
+mySatellite1.SetPropagatorType("RK89");
+// sets drag coefficient (was changed when TLE was loaded in)
+mySatellite1.Cd = 2.2;
+
+// add a tail to the Satellites
+ViewWindow1.SetHistoryMode(Satellites.ObjectId, 1);
+
+// set size scaling factor (for visualization)
+For i = 0 to (numSatellites-1) step 1;
+	Satellites[i].BodyScale = 1;
+End;
+
+// reports
+Report "Initial State Vector:" to Console;
+Report "Epoch: ", mySatellite1.Epoch.ConvertToCalendarDate() to Console;
+Report "X: ", mySatellite1.X, " Y: ", mySatellite1.Y, " Z: ", mySatellite1.Z, " VX: ", mySatellite1.VX, " VY: ", mySatellite1.VY, " VZ: ", mySatellite1.VZ, " VMag: ", mySatellite1.VMag, " Mass:", mySatellite1.Mass to Console;
+Report " " to Console;
+Report "Simulating for", simDuration, " days with thruster on for the first", thrustDuration, " days" to Console;
+Report "Mass:", mySatellite1.Mass, " kg" to Console;
+Report "Thrust:", (mySatellite1.Thrusters[0] AsType Thruster).ThrusterC1, " N" to Console;
+Report " Cd:", mySatellite1.Cd, " Cl:", mySatellite1.Cl, " Cr:", mySatellite1.Cr, " Drag Area:", mySatellite1.DragArea, " Lift Area:", mySatellite1.LiftArea, " SRP Area:", mySatellite1.SRPArea to Console;
+Report "CG:", mySatellite1.CenterOfMass[0], " ", mySatellite1.CenterOfMass[1], " ", mySatellite1.CenterOfMass[2] to Console;
+Report "MOI:", mySatellite1.MOI to Console;
+Report " " to Console;
+
+Put mySatellite1 to Ephemeris1;
+While (mySatellite1.ElapsedTime < TimeSpan.FromDays(thrustDuration));
+	Maneuver mySatellite1 using FiniteBurn1;
+	Put mySatellite1 to Ephemeris1;
+End;
+
+
+If (simDuration > thrustDuration);
+	While (mySatellite1.ElapsedTime < TimeSpan.FromDays(simDuration-thrustDuration));
+		Step mySatellite1;
+		Put mySatellite1 to Ephemeris1;
+	End;
+End;
+
+Report "Thrust simulation completed." to Console;
+Report " " to Console;
+Report "Final State Vector:" to Console;
+Report "Epoch: ", mySatellite1.Epoch.ConvertToCalendarDate() to Console;
+Report "X: ", mySatellite1.X, " Y: ", mySatellite1.Y, " Z: ", mySatellite1.Z, " VX: ", mySatellite1.VX, " VY: ", mySatellite1.VY, " VZ: ", mySatellite1.VZ, " VMag: ", mySatellite1.VMag, " Mass:", mySatellite1.Mass to Console;
+
+Spacecraft mySatellite2(Ephemeris1);
+Step mySatellite2 to (mySatellite2.Epoch == startEpoch);
+
+// add Spacecraft2 to visualizaitons
+ViewWindow1.AddObject(mySatellite2);
+
+// add a tail and change color for Spacecraft2
+ViewWindow1.SetHistoryMode(mySatellite2.ObjectId, 1);
+ViewWindow1.SetObjectColor(mySatellite2.ObjectId,color);
+
+// filter out mySatellite from the Satellites formation 
+// (in theory the TLE that created the Satellites formation should contain mySpacecraft's TLE info)
+For i = (numSatellites-1) to 0 step -1;
+	If (Satellites[i].DisplayName == mySatellite1.DisplayName);
+		Satellites.RemoveAt(i);
+		numSatellites = Satellites.Count;
+	End;
+End;
+
+
+Report " " to Console;
+Report " " to Console;
+Report " " to Console;
+Report "Number of Satellites: ", (numSatellites+1)<5,5> to Console;
+
+//step all Spacecraft to same starting epoch (reference is starting epoch of Spacecraft2)
+For i = 0 to (numSatellites-1) step 1;
+	// Try block ensures that program doesn't crash if a satellite has a propogation error
+	Try sending ErrorCount to errorCount;
+		satsWithErrors.PushBack(i);
+		Step Satellites[i] to (Satellites[i].Epoch == mySatellite2.Epoch);
+		satsWithErrors.PopBack();
+	End;
+End;
+
+// reports number of satellites that had a propogation error
+// common propogation errors are: negative eccentricity, spacecraft crashes into the earth, 
+If (errorCount > 0.0);
+	Report "There was an issue with stepping ", errorCount<5,5>, " satellites to the start epoch. This is normal as long as it is a small number (about 1%) of satellites, and is likely due to them developing a negative eccentricity during propogation." to Console;
+	errorCount = 0.0;
+	// removes the satellites with propogation errors
+	For i = (satsWithErrors.Dimension-1) to 0 step -1;
+		Satellites.RemoveAt(satsWithErrors[i]);
+	End;
+	Report "Removed ", satsWithErrors.Dimension<5,5>, " satellites from the simulation." to Console;
+	numSatellites = Satellites.Count;
+	Report "New number of satellites being simulated: ", (numSatellites+1)<5,5> to Console;
+End;
+
+// set prevRangeRates to the range rate at start time to prevent potentially skipping the first time of closest approach (TCA)
+For i = 0 to (numSatellites-1) step 1;
+	prevRangeRates[i] = mySatellite2.RangeRate(Satellites[i]);
+End;
+
+// reset satsWithErrors to be reused to catch errors below
+satsWithErrors.Clear();
+satsWithErrors.Dimension = numSatellites;
+
+Update ViewWindow1;
+// propogate for thrust duration and track every TCA between a Satellite and Spacecraft2
+While (mySatellite2.ElapsedTime < TimeSpan.FromDays(simDuration));
+	
+	//step Spacecraft2 (to be used as a reference epoch for stepping the Satellites)
+	Step mySatellite2;
+	
+	errorCount = 0.0;
+	// step all other satellites in formation
+	For i = 0 to (numSatellites-1) step 1;
+		// Try block ensures program doesn't crash if a satellite crashes into the earth
+		Try sending ErrorCount to errorCount;
+			satsWithErrors[i] = 1;
+			Step Satellites[i] to (Satellites[i].Epoch == mySatellite2.Epoch);
+			satsWithErrors[i] = 0;
+		End;
+	End;
+	
+	// for each satellite in the formation, check for range rate sign change to determine if a TCA has occured, and if so store the time and range
+	For i = 0 to (numSatellites-1) step 1;
+		// doesn't run for sats that threw a propagation error
+		If (satsWithErrors[i] == 0);
+			//update current RangeRate
+			currentRangeRates[i] = mySatellite2.RangeRate(Satellites[i]);
+		
+			//if rangeRate flips signs to being positive, that means spacecrafts are now going apart, so epoch is near a TCA
+			If ((currentRangeRates[i] > 0) and (prevRangeRates[i] < 0 ));
+				timesClosestApproach.PushBack(mySatellite2.Epoch);
+				satelliteApproached.PushBack(i);
+			End;
+	
+			//update previous RangeRate
+			prevRangeRates[i] = currentRangeRates[i];
+		End;
+	End;
+	
+	Update ViewWindow1;
+End;
+
+// reports number of satellites that had a propogation error
+If (errorCount > 0.0);
+	Report "There was an issue with stepping ", errorCount<5,5>, " satellites to the end epoch. This is normal as long as it is a very small number ( < 1%) of satellites, and is likely due to them developing a negative eccentricity during propogation." to Console;
+	errorCount = 0.0;
+End;
+
+// turn off tails so visualization doesn't get weird when jumping to different epochs
+ViewWindow1.SetHistoryMode(mySatellite2.ObjectId, 0);
+ViewWindow1.SetHistoryMode(Satellites.ObjectId, 0);
+mySatellite2.TailLength = 0;
+For i = 0 to (numSatellites-1) step 1;
+	Satellites[i].TailLength = 0;
+End;
+
+// calculate probability of collision at each TCA
+For i = 0 to (timesClosestApproach.Dimension-1) step 1;
+	// try block ensure any errors don't crash the program
+	Try sending ErrorCount to errorCount;
+		// Step spacecrafts to approx TCA
+		Step mySatellite2 to (mySatellite2.Epoch == timesClosestApproach[i]);
+		Step Satellites[satelliteApproached[i]] to (Satellites[satelliteApproached[i]].Epoch == timesClosestApproach[i]);
+	
+		// Compute the exact TCA (function finds a relative minimum, so is only really accurate when the spacecraft are already at the approximate TCA
+		timeClosestApproach = mySatellite2.TCA(Satellites[satelliteApproached[i]], rangeAtTCA);
+		
+		// Step spacecrafts to exact TCA
+		Step mySatellite2 to (mySatellite2.Epoch == timeClosestApproach);
+		Step Satellites[satelliteApproached[i]] to (Satellites[satelliteApproached[i]].Epoch == timeClosestApproach);
+
+		// Calculate the Pc at TCA
+		probabilityCollision  = mySatellite2.ProbabilityOfCollision(Satellites[satelliteApproached[i]], hardBodyRadius);
+
+		// only display if there is a non-zero probability of collision
+		If (probabilityCollision>=0.0000000000000000000000000000000000000000000000000000001);
+			numberPOCs++;
+			Report " " to Console;
+			Report " " to Console;
+			Report " " to Console;
+			Report "Satellite" to Console;
+			Report Satellites[satelliteApproached[i]].DisplayName to Console;
+			Report "TCA" to Console;
+			Report timeClosestApproach.ConvertToCalendarDate to Console;
+			Report "Distance at TCA" to Console;
+			Report rangeAtTCA to Console;
+			Report "Probability of collision" to Console;
+			Report probabilityCollision<14,55> to Console;
+			Update ViewWindow1;
+		End;
+		
+		If (probabilityCollision > 0.01);
+			significantProb++;
+			sigProbData.PushBack(Satellites[satelliteApproached[i]].DisplayName);
+			sigProbData.PushBack(timeClosestApproach.ConvertToCalendarDate);
+			sigProbData.PushBack(rangeAtTCA.ToString());
+			sigProbData.PushBack(probabilityCollision.ToString());
+		End;
+	End;
+End;
+
+Report " " to Console;
+Report " " to Console;
+Report " " to Console;
+			
+// report any errors with the TCAs
+If (errorCount > 0.0);
+	Report errorCount<5,5>, " out of ", timesClosestApproach.Dimension<5,5>, " TCAs threw errors. This is normal/expected as long as it is a low ratio. See note at bottom of FreeForm block 6 for more information." to Console;
+End;
+
+// report number of non-zero POCs found
+Report "Checked ", timesClosestApproach.Dimension<5,5>, " Times of Closest Approach for Probability of Collision." to Console;
+Report "Non-Zero Probabilities of Collision Found: ", numberPOCs to Console;
+Report "Significant Probabilites of Collision Found: ", significantProb to Console;
+Report "Reprinting information for all significant probabilities of collision:" to Console;
+
+// reprint the information for the significant POCs
+If (significantProb>0.0);
+	For i = 0 to (significantProb*4-1) step 4;
+		Report " " to Console;
+		Report " " to Console;
+		Report " " to Console;
+		Report "Satellite" to Console;
+		Report sigProbData[i] to Console;
+		Report "TCA" to Console;
+		Report sigProbData[i+1] to Console;
+		Report "Distance at TCA" to Console;
+		Report sigProbData[i+2] to Console;
+		Report "Probability of collision" to Console;
+		Report sigProbData[i+3] to Console;
+	End;
+End;
+Report " " to Console;
+Report " " to Console;
+Report " " to Console;
+
+Report "Finished" to Console;
+
+// Note: the reason that line 88 throws an error sometimes is almost certainly due to the presence of satellites with highly eliptical orbits, but it isn't a concern as functionality is not affected
+// ran a debugging test, this shows that all the satellites that are throwing this error are eliptical orbiters that are currently far away from earth (around apogee)
+// this is probably because the range rate is flipping in a way that suggests a TCA, but since the orbit is eliptical this isn't really a close approach, it is a passby
+// so the TCA method tries to find the TCA which is when the satellite returns back to around its perigee, but this takes so much time that it ends up being out of the 
+// time range for Spacecraft2 so throws an error]]></ProjectScript>
+  <ProjectNotes></ProjectNotes>
+</FreeFlyerProjectFile>
